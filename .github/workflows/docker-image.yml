@@ -20,8 +20,8 @@ jobs:
       run: docker build -t demo_ui .
     - name: Push
       run: |
-           docker tag back:latest ${{ secrets.ARTIFACTORY_URL }}/demo-local-docker-repo/demo-backend-app
-           docker push ${{ secrets.ARTIFACTORY_URL }}/demo-local-docker-repo/demo-backend-app
+           docker tag back:latest ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
+           docker push ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
 
 #  deploy:
 #
