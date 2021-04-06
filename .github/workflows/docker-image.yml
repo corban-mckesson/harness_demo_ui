@@ -20,7 +20,7 @@ jobs:
       run: docker build -t demo_ui .
     - name: Push
       run: |
-           docker tag demo:latest ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
+           docker tag demo_ui:latest ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
            docker push ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
 
 #  deploy:
