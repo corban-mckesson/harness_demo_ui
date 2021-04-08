@@ -8,7 +8,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "COMMIT 3";
+        return "COMMIT 4";
     }
 
 }
