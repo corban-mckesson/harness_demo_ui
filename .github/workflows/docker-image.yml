@@ -22,13 +22,13 @@ jobs:
       run: |
            docker tag demo_ui:latest ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
            docker push ${{ secrets.ARTIFACTORY_URL }}/harness-demo-ui/demo-ui
-    - name: HTTP Request Action
-      uses: fjogeleit/http-request-action@v1.8.0
-      with:
-        url: 'https://app.harness.io/gateway/api/webhooks/Jem6JtLAAFcCEUjJJHP1bDDtPJnhOygt0Ht3djXv?accountId=JUGxua0aTTSJ6X3K7Y21Ug'
-        method: 'POST'
-        contentType: 'application/json'
-        date: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"demo-ui","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-3"},"artifacts":[{"artifactSourceName":"harness-demo-ui_harness-demo-ui_demo-ui","service":"demo-ui","buildNumber":"latest"}]}'
+#    - name: HTTP Request Action
+#      uses: fjogeleit/http-request-action@v1.8.0
+#      with:
+#        url: 'https://app.harness.io/gateway/api/webhooks/Jem6JtLAAFcCEUjJJHP1bDDtPJnhOygt0Ht3djXv?accountId=JUGxua0aTTSJ6X3K7Y21Ug'
+#        method: 'POST'
+#        contentType: 'application/json'
+#        date: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"demo-ui","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-3"},"artifacts":[{"artifactSourceName":"harness-demo-ui_harness-demo-ui_demo-ui","service":"demo-ui","buildNumber":"latest"}]}'
 #        data: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"backend","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-3"},"artifacts":[{"artifactSourceName":"demo-local-docker-repo_demo-backend-app (demo-local-docker-repo/demo-backend-app)","service":"backend","buildNumber":"latest"}]}'
       
 
