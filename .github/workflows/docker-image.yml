@@ -28,7 +28,7 @@ jobs:
         url: 'https://app.harness.io/gateway/api/webhooks/Jem6JtLAAFcCEUjJJHP1bDDtPJnhOygt0Ht3djXv?accountId=JUGxua0aTTSJ6X3K7Y21Ug'
         method: 'POST'
         contentType: 'application/json'
-        data: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"demo-ui","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-5"},"artifacts":[{"artifactSourceName":"demo-ui-jfrog (harness-demo-ui/harness-demo-ui/demo-ui)","service":"demo-ui","buildNumber":"latest"}]}'
+        data: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"demo-ui","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-5"},"artifacts":[{"artifactSourceName":"demo-ui-jfrog","service":"demo-ui","buildNumber":"latest"}]}'
 #        data: '{"application":"BE1tH06USyupdp-eaTk6xQ","parameters":{"Environment":"Dev","Service":"backend","InfraDefinition_KUBERNETES":"Dev-k8s","jiraRequest":"HAR-3"},"artifacts":[{"artifactSourceName":"demo-local-docker-repo_demo-backend-app (demo-local-docker-repo/demo-backend-app)","service":"backend","buildNumber":"latest"}]}'
       
 
